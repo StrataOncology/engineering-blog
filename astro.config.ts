@@ -11,8 +11,8 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://strataoncology.github.io",
-	base: "/engineering-blog",
+	site: "https://roaring-duckanoo-2331b6.netlify.app/",
+	// base: "/engineering-blog",
 	integrations: [
 		mdx({}),
 		tailwind({
