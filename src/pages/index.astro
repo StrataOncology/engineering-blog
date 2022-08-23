@@ -5,17 +5,14 @@ import SocialList from "@/components/SocialList";
 import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
 
-const meta = {
-	title: "Asto Cactus",
-	description: "The perfect starter for your perfect blog.",
-};
+import siteMeta from "@/site-meta.config";
 
 const MAX_POSTS = 10;
 const allPosts = await Astro.glob<Post>("./posts/*.mdx");
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 ---
 
-<PageLayout meta={meta}>
+<PageLayout meta={siteMeta}>
 	<section>
 		<h1 class="mb-6 title">Hello World!</h1>
 		<p class="mb-4">

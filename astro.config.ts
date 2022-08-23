@@ -12,7 +12,6 @@ export default defineConfig({
 		},
 	},
 	site: "https://roaring-duckanoo-2331b6.netlify.app/",
-	// base: "/engineering-blog",
 	integrations: [
 		mdx({}),
 		tailwind({

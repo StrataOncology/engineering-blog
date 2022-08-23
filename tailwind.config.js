@@ -8,8 +8,12 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif']
+			},
 			colors: {
-				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
+				// bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
+				bgColor: "var(--theme-bg)",
 				textColor: "hsl(var(--theme-text) / <alpha-value>)",
 				link: "hsl(var(--theme-link) / <alpha-value>)",
 				accent: "hsl(var(--theme-accent) / <alpha-value>)",

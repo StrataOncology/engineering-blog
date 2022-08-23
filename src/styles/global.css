@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
 @tailwind base;
 @layer base {
 	:root {
@@ -13,7 +15,7 @@
 
 	:root.dark {
 		color-scheme: dark;
-		--theme-bg: 210 6.5% 12.2%;
+		--theme-bg: #0f172a;
 		--theme-link: 330 49.4% 66.7%;
 		--theme-text: 220 2.9% 79.4%;
 		--theme-accent: 159 62.8% 45.3%;
@@ -23,11 +25,11 @@
 	}
 
 	html {
-		@apply h-full border-t-2 border-textColor scroll-smooth;
+		@apply h-full scroll-smooth border-t-2 border-textColor;
 	}
 
 	html body {
-		@apply h-full max-w-3xl mx-auto px-8 pt-16 font-mono font-normal antialiased text-sm flex flex-col text-textColor bg-bgColor;
+		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-sans text-sm font-normal text-textColor antialiased;
 	}
 }
 @tailwind components;
