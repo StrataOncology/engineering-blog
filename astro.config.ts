@@ -11,7 +11,8 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://www.astro-theme-cactus.netlify.app",
+	site: "https://strataoncology.github.io",
+	base: "/engineering-blog",
 	integrations: [
 		mdx({}),
 		tailwind({
